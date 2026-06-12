@@ -17,7 +17,6 @@
 - [Key Insights](#key-insights)
 - [Strategic Recommendations](#strategic-recommendations)
 - [Tech Stack](#tech-stack)
-- [Repository Structure](#repository-structure)
 - [How to Use](#how-to-use)
 - [Credits](#credits)
 - [License](#license)
@@ -572,47 +571,6 @@ EU leads in refund revenue lost ($274.98K). Given that EU customers also spend t
 | **Data Modeling (Star Schema)** | Relational model design connecting fact and dimension tables |
 
 ---
-
-## Repository Structure
-
-```
-ecommerce-analytics-powerbi/
-│
-├── README.md                          ← This file
-│
-├── data/
-│   ├── raw/
-│   │   ├── Customers.csv              ← Raw customer profiles
-│   │   ├── Events.csv                 ← Raw transaction events
-│   │   ├── Products.csv               ← Product catalog
-│   │   └── DataDictionary.csv         ← Field-level reference
-│   │
-│   └── processed/
-│       ├── customers_clean.csv        ← Cleaned customers with region fill
-│       ├── events_clean.csv           ← Cleaned events with derived time fields
-│       ├── loyal_customers.csv        ← Per-customer loyalty profile
-│       └── monthly_summary.csv        ← Monthly aggregated KPIs
-│
-├── scripts/
-│   └── prepare_data.py                ← Python data preparation pipeline
-│
-├── dashboard/
-│   └── Ecommerce_Analytics.pbix       ← Power BI Desktop file (add here)
-│
-├── docs/
-│   ├── schema_diagram.png             ← Data model diagram (add here)
-│   └── Ecommerce_Dashboard.pdf        ← Dashboard export PDF
-│
-└── images/
-    ├── 01_cover_page.png
-    ├── 02_sales_overview.png
-    ├── 03_loyal_customers.png
-    ├── 04_product_analysis.png
-    ├── 05_discounts_refunds.png
-    ├── 06_geography.png
-    └── 07_executive_summary.png
-```
-
 ---
 
 ## How to Use
